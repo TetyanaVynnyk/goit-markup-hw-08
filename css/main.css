@@ -65,10 +65,16 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -118,7 +124,7 @@ button {
 .internal-block-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--block-text-color);
 }
@@ -709,27 +715,60 @@ button {
     padding-right: 32px;
   }
 }
+@media screen and (max-width: 767px) {
+  .block-title {
+    text-align: center;
+  }
+  .principles-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.principles-list__item {
+  width: 100%;
+  max-width: 450px;
+}
+
 .principles-list__icon {
-  width: 270px;
+  width: 100%;
+  max-width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
 }
 
-.principles-section {
-  padding-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 738px;
+    gap: 30px;
+  }
+  .principles-list__item {
+    width: 354px;
+    max-width: 354px;
+  }
+  .principles-list__icon {
+    width: 354px;
+    max-width: 354px;
+  }
 }
-
-.principles-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .principles-section {
+    padding-bottom: 0px;
+  }
+  .principles-list {
+    width: 100%;
+  }
+  .principles-list__icon {
+    width: 270px;
+    max-width: 270px;
+  }
+  .principles-list__item {
+    width: 270px;
+    max-width: 270px;
+  }
 }
-
-.principles-list__item {
-  width: 270px;
-}
-
 .services-list {
   display: flex;
   gap: 30px;
