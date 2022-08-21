@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.footer-social-list__link, .partner-list__item-link, .social-list__link, .principles-list__icon, .modal-window-form__check-desc {
+.footer-social-list__link, .partner-list__item-link, .social-list__link, .principles-list__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,14 +144,22 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-width: 528px;
+    height: 581px;
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -162,7 +170,7 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   transition: border-color var(--transition-dur-and-fun);
@@ -186,7 +194,7 @@ button {
 .modal-window-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -246,8 +254,8 @@ button {
 }
 .modal-window-form__message::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -270,10 +278,12 @@ button {
 }
 
 .modal-window-form__check-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.14;
   color: #757575;
   margin-bottom: 30px;
 }
@@ -295,10 +305,11 @@ button {
 }
 .modal-window-form__check:focus + .modal-window-form__check-desc::before {
   outline: 1px solid var(--accent-color);
-  border: #FFFFFF;
+  border: #ffffff;
 }
 
 .modal-window-form__user-policy-link {
+  text-align: start;
   color: var(--accent-color);
 }
 
@@ -313,18 +324,40 @@ button {
   border: none;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-dur-and-fun);
 }
 .modal-window-form__submit:hover, .modal-window-form__submit:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-window-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .modal-window-form__message::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-window-form__check-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-window-form__submit {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -585,7 +618,7 @@ button {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/mobile_hero-img.jpg);
   background-size: cover;
 }
@@ -629,7 +662,7 @@ button {
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -657,15 +690,15 @@ button {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   transition: background-color var(--transition-dur-and-fun);
 }
 .modal-btn:hover, .modal-btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 @media screen and (min-width: 1200px) {
