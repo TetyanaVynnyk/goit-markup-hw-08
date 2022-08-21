@@ -104,7 +104,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
-      transform: translate(0, 33px);
+      transform: translate(0, 28px);
     }
   }
 
@@ -137,6 +137,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+.current::after{
+  transform: translate(0, 33px);
+  }
+
     .contact-list__item {
     margin-left: 30px;}
     
