@@ -279,6 +279,7 @@ button {
 
 .modal-window-form__check-desc {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-weight: 400;
