@@ -105,13 +105,18 @@ button {
 }
 .section-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 36px;
+  }
+}
 .internal-block-title {
   font-weight: 700;
   font-size: 14px;
@@ -806,16 +811,17 @@ button {
   background-color: #F5F4FA;
 }
 
-.employees-list {
-  display: flex;
-  gap: 30px;
-}
-
 .employee {
-  flex-basis: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.employee__photo {
+  width: 100%;
+  max-width: 450px;
+  height: 460px;
 }
 
 .employee__description {
