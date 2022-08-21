@@ -1,0 +1,22 @@
+.principles-list__icon {
+    @extend %align;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
+.principles-section {
+    padding-bottom: 0px;
+}
+
+.principles-list {
+    display: flex;
+    gap: 30px;
+}
+
+.principles-list__item {
+    width: 270px;
+}
+
