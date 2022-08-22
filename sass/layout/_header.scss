@@ -18,15 +18,9 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ececec;
-  }
-}
 .header-container {
   display: flex;
   align-items: center;
@@ -36,19 +30,6 @@
 .logo-link {
   @include font(700, 24px, 1.17);
   letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 768px) {
-  .logo-link {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-link {
-    @include font(700, 26px, 1.19);
-    margin-right: 93px;
-  }
 }
 
 .logo-link__first-logo-word {
@@ -69,6 +50,10 @@
   }
   .menu {
     display: flex;
+  }
+
+  .logo-link {
+    margin-right: 88px;
   }
 
   .menu__item:not(:last-child) {
@@ -137,6 +122,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .logo-link {
+    @include font(700, 26px, 1.19);
+    margin-right: 93px;
+  }
+
   .current::after {
     transform: translate(0, 33px);
   }
