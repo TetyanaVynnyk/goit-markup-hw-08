@@ -1341,7 +1341,7 @@ button {
 }
 @media screen and (max-width: 480px) {
   .portfolio-item__overlay-text {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
