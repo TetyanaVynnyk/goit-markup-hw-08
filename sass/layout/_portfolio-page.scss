@@ -169,3 +169,10 @@
     height: 294px;
   }
 }
+
+@media screen and (max-width:480px){
+  .portfolio-item__overlay-text {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
