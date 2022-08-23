@@ -170,12 +170,12 @@
   }
 }
 
-@media screen and (max-width:432px){
+@media screen and (max-width: 432px) {
   .modal-window-form__check-desc {
     margin-bottom: 15px;
 
-  &::before{
-    margin-bottom: 5px;
+    &::before {
+      margin-bottom: 5px;
+    }
   }
-}
 }
