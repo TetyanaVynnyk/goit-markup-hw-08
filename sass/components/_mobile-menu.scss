@@ -120,6 +120,19 @@
   }
 }
 
+@media screen and (max-width: 350px){
+.mobile-menu-bar {
+  margin-bottom: 275px;
+}
+
+.mobile-contact-list__phone-number {
+  display: inline-block;
+  @include font(500, 30px, 1.17);
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;

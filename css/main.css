@@ -370,6 +370,14 @@ button {
     line-height: 1.71;
   }
 }
+@media screen and (max-width: 432px) {
+  .modal-window-form__check-desc {
+    margin-bottom: 15px;
+  }
+  .modal-window-form__check-desc::before {
+    margin-bottom: 5px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -474,6 +482,19 @@ button {
     line-height: 1.22;
     letter-spacing: 0.02rem;
     color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 350px) {
+  .mobile-menu-bar {
+    margin-bottom: 275px;
+  }
+  .mobile-contact-list__phone-number {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.17;
+    color: var(--accent-color);
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
