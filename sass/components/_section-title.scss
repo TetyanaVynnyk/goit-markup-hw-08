@@ -1,11 +1,12 @@
 .section-title {
-    @include font(700, 28px, 1.17);
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+  @include font(700, 28px, 1.17);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
-@media screen and (min-width:1200px) {
-    .section-title{
-    font-weight: 36px;}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 36px;
+  }
 }

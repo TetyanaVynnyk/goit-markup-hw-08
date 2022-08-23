@@ -3,38 +3,38 @@ h2,
 h3,
 h4,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
 }
 
 button {
-    font-family: inherit;
+  font-family: inherit;
 }
